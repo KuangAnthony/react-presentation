@@ -5,6 +5,8 @@ import okaidia from 'react-syntax-highlighter/dist/cjs/styles/prism/okaidia';
 import { motion } from 'framer-motion';
 import CodeSandbox from '@uiw/react-codesandbox';
 import Image from 'next/image';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { SiVercel, SiNetlify } from 'react-icons/si';
 import SlidePage from '../layouts/SlidePage';
 import Cover from './Cover';
 import SpeakerNotes from './SpeakerNotes';
@@ -38,6 +40,10 @@ const mdComponents = {
   ReactIcon,
   CodeSandbox,
   Image,
+  FaLinkedin,
+  FaGithub,
+  SiVercel,
+  SiNetlify,
 };
 
 export default ({ children }) => (
