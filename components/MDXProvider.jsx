@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import okaidia from 'react-syntax-highlighter/dist/cjs/styles/prism/okaidia';
 import { motion } from 'framer-motion';
 import CodeSandbox from '@uiw/react-codesandbox';
+import Image from 'next/image';
 import SlidePage from '../layouts/SlidePage';
 import Cover from './Cover';
 import SpeakerNotes from './SpeakerNotes';
@@ -36,6 +37,7 @@ const mdComponents = {
   Avatar,
   ReactIcon,
   CodeSandbox,
+  Image,
 };
 
 export default ({ children }) => (
