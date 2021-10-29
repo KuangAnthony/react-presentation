@@ -1,4 +1,4 @@
-import { useSwipeable } from "react-swipeable";
+import { useSwipeable } from 'react-swipeable';
 
 export const Swipeable = ({ children, ...props }) => {
   const handlers = useSwipeable(props);

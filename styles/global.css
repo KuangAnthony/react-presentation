@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.codesandbox {
+  @apply w-[1600px] h-[800px] mx-auto;
+}

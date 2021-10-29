@@ -4,44 +4,85 @@
 
 # `<React />` - a dive into its ecosystem
 
-Presented by Anthony Kuang
+<div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "1rem",
+  }}
+>
+  <p style={{ fontSize: "30px" }}>Presented by Anthony Kuang</p>
+  <Avatar />
+</div>
 
 </Cover>
 
 ---
 
-1. Clone this project.
-2. Write some MDX.
-3. Export as [static app](https://nextjs.org/docs/advanced-features/static-html-export)
-4. ???
-5. Profit as a speaker 💰💰💰
+<h1 style={{ textAlign: "start", paddingBottom: "30px", marginLeft: "190px" }}>
+  WTF is React?
+</h1>
 
-<SpeakerNotes>
-    
-Private notes here.
-
-You can write an extremely long note and it'll still display inside of the presenter mode.
-
-# Even Markdown!
-
-- Just
-- do
-- it
-
-</SpeakerNotes>
-
----
-
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
+<div
+  style={{
+    display: "flex",
+    marginLeft: "80px",
+    marginRight: "80px",
+    justifyContent: "space-between",
+  }}
 >
-> <cite>Don Norman</cite>
+  <Steps>
+    <Step />
+    <Step>The most wanted Frontend skill from employers</Step>
+    <Step>Powers Facebook, Instagram, Airbnb</Step>
+    <Step>React vs. Angular vs. Vue</Step>
+    <Step>Simplifies complexities</Step>
+  </Steps>
+  <ReactIcon />
+</div>
 
 ---
 
-# 🤫
+## JSX = HTML with superpowers
+
+```jsx
+<Layout>
+  <h1>This is my header</h1>
+  <img src="/images/puppy.jpg" alt="Puppy image" />
+  <button onClick={(evt) => console.log(evt)}>Click me!</button>
+  <Avatar />
+</Layout>
+```
+
+1. Mostly just HTML!
+2. Components (`Layout` and `Avatar`) are capital case
+3. Components may contain _children_
+4. Event handling built-in without need to use JavaScript DOM selectors
+
+---
+
+<div class="codesandbox">
+  <CodeSandbox
+    files={{
+      "package.json": {
+        content: {
+          dependencies: {
+            react: "latest",
+            "react-dom": "latest",
+          },
+        },
+      },
+      "index.js": {
+        content: ``,
+      },
+      "index.html": {
+        content:`<div id="root"></div>`,
+      },
+    }}
+  />
+
+</div>
 
 ---
 
